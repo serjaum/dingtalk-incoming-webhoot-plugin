@@ -1,17 +1,10 @@
-# rundeck 钉钉机器人插件
+# rundeck plugin
+English version of original rundeck plugin developed by nogfenqi
 
 
 
-## 如何使用
+## How to
 
-1. 执行`gradle jar`
-2. 把生成的jar放在`RUNDECK_HOME/libexc`目录下
-
-
-## 效果图
-
-设置页面
-![](./doc/img/rundeck-dingtalk.png)
-
-效果
-![](./doc/img/dingtalk.jpeg)
+1. Clone this repo
+2. Build with: `gradle jar`
+2. Copy the dingtalk-incoming-webhoot-plugin-1.1.jar to the `RUNDECK_HOME/libexc` directory
