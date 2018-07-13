@@ -26,7 +26,7 @@ import java.util.Scanner;
  * Created by Chenlm on 01/07/2017.
  */
 @Plugin(service = "Notification", name = "DingtalkNotification")
-@PluginDescription(title = "钉钉机器人", description = "发送消息到钉钉机器人")
+@PluginDescription(title = "Bot", description = "Send a message to the bot")
 public class DingtalkNotificationPlugin implements NotificationPlugin {
 
 
@@ -37,10 +37,10 @@ public class DingtalkNotificationPlugin implements NotificationPlugin {
     private static final String TRIGGER_SUCCESS = "success";
     private static final String TRIGGER_FAILURE = "failure";
 
-    @PluginProperty(title = "钉钉机器人hook url", description = "钉钉机器人hook url", required = true, defaultValue = "https://oapi.dingtalk.com/robot/send")
+    @PluginProperty(title = "hook url", description = "hook url", required = true, defaultValue = "https://oapi.dingtalk.com/robot/send")
     private String dingtalkHookUrl;
 
-    @PluginProperty(title = "钉钉机器人token", description = "钉钉机器人token", required = true)
+    @PluginProperty(title = "token", description = "token", required = true)
     private String dingtalkToken;
 
 

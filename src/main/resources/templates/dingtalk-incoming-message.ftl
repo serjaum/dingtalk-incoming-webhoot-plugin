@@ -5,11 +5,11 @@
 </#if>
 <#assign message="<${executionData.href}|Execution #${executionData.id}> of job <${executionData.job.href}|${jobName}>">
 <#if trigger == "start">
-    <#assign state="开始">
+    <#assign state="start">
 <#elseif trigger == "failure">
-    <#assign state="失败">
+    <#assign state="error">
 <#else>
-    <#assign state="成功">
+    <#assign state="success">
 </#if>
 <#assign optionStr = "">
 <#list executionData.context.option?keys as key>
@@ -18,8 +18,8 @@
 {
     "msgtype": "markdown",
     "markdown": {
-        "title":"${jobName}升级${state}报告",
-        "text": "# ${jobName}升级${state}报告 \n ## 操&nbsp;&nbsp;作&nbsp;人: ${executionData.user} \n ## 项&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目:  ${executionData.project} \n ## 任&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务: [${jobName}](${executionData.job.href}) \n ## 任务编号: [${executionData.id}](${executionData.href}) \n ## 执行参数: ${optionStr} "
+        "title":"## ${jobName}: ${state}",
+        "text": "## ${jobName}: ${state} \n\n Username: ${executionData.user} \n\n Project:  ${executionData.project} \n\n Job: [${jobName}](${executionData.job.href}) \n\n Execution id: [${executionData.id}](${executionData.href}) \n\n Execution parameters: ${optionStr} "
      }
 }
 
