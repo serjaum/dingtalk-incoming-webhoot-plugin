@@ -9,4 +9,4 @@ English version of original rundeck plugin https://github.com/nongfenqi/dingtalk
 2. Build with: `gradle jar`
 2. Copy the dingtalk-incoming-webhoot-plugin-1.1.jar to the `RUNDECK_HOME/libexc` directory
 
-![](./doc/img/Screenshot from 2018-07-13 14-45-16.png)
+![](./doc/img/screenshot.png)
