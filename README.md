@@ -1,4 +1,4 @@
-# rundeck plugin
+# Rundeck plugin
 English version of original rundeck plugin https://github.com/nongfenqi/dingtalk-incoming-webhoot-plugin
 
 
